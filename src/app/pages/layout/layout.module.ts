@@ -7,6 +7,7 @@ import {
   NbListModule,
   NbRouteTabsetModule,
   NbStepperModule,
+  NbSelectModule,
   NbTabsetModule, NbUserModule,
 } from '@nebular/theme';
 
@@ -35,6 +36,7 @@ import { NewsService } from './news.service';
     NbListModule,
     NbAccordionModule,
     NbUserModule,
+    NbSelectModule,
     LayoutRoutingModule,
   ],
   declarations: [

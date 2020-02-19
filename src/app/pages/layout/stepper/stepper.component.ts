@@ -11,10 +11,12 @@ export class StepperComponent implements OnInit {
   firstForm: FormGroup;
   secondForm: FormGroup;
   thirdForm: FormGroup;
-
+  linearMode = true;
   constructor(private fb: FormBuilder) {
   }
-
+  toggleLinearMode() {
+    this.linearMode = !this.linearMode;
+  }
   ngOnInit() {
     this.firstForm = this.fb.group({
       firstCtrl: ['', Validators.required],
